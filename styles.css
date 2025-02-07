@@ -77,15 +77,17 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: #000;
-    height: 100vh; /* Full viewport height */
+    background-image: url('images/Hero_bg.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the full section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    height: 500px; /* Adjust height as needed */
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white; /* Ensure text is readable */
     text-align: center;
-    color: #fff;
-    position: relative;
+	images/Hero_bg.jpg
 }
 
 .hero::before {
