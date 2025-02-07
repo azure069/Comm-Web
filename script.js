@@ -1,11 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-        });
-    });
+<script>
+document.addEventListener("scroll", function() {
+    let scrollPosition = window.scrollY + window.innerHeight;
+    let documentHeight = document.documentElement.scrollHeight;
+    
+    if (scrollPosition >= documentHeight) {
+        document.getElementById("social-icons").style.opacity = "1"; // Show icons
+    } else {
+        document.getElementById("social-icons").style.opacity = "0"; // Hide icons
+    }
+});
 
     // Event Countdown Timer
     function countdown(eventDate, elementId) {
@@ -23,10 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }, 1000);
     }
-
-    countdown("March 15, 2025", "dashain-countdown");
-    countdown("November 1, 2025", "tihar-countdown");
-    countdown("July 20, 2025", "picnic-countdown");
 
     // Lightbox for Gallery
     window.openLightbox = function (img) {
@@ -49,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please fill in all fields.");
             return;
         }
+</script>
 
         alert("Message sent successfully!");
         this.reset();
