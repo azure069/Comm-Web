@@ -308,11 +308,8 @@ footer {
 
 /* Social Media Icons (Right Side) */
 .social-media-right {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    justify-content: center;
     gap: 15px;
     opacity: 0; /* Hidden by default */
     transition: opacity 0.5s ease-in-out;
@@ -332,11 +329,8 @@ footer {
 
 /* Image Holder with Link (Left Side) */
 .image-holder-left {
-    pposition: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    justify-content: center;
     gap: 15px;
     opacity: 0; /* Hidden by default */
     transition: opacity 0.5s ease-in-out;
