@@ -77,7 +77,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/Hero_bg.jpg'); /* Path to your image */
+    background-image: url('https://raw.githubusercontent.com/your-username/repository-name/main/images/Hero_bg.jpg'); /* Path to your image */
     background-size: cover; /* Cover the full section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
