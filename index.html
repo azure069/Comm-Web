@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nepali Community of Belleville</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section (Sticky Navbar) -->
+    <header>
+        <div class="header-container">
+            <a href="https://www.nepalicommunityofbelleville.ca" target="_blank">
+			<img src="C:\Users\anils\OneDrive\Desktop\New Year Event-2082\Website\Resources\Logo_Community.webp" alt="Nepali Community Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero">
+        <h1>Welcome to the <span class="highlight">Nepali Community of Belleville</span></h1>
+        <p>Experience the beauty of Nepalese culture, traditions, and togetherness in the heart of Belleville.</p>
+			<button class="cta-btn"><a href="#contact">Join Us</a></button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>We are a vibrant community dedicated to promoting Nepali culture and fostering strong relationships.</p>
+            <button class="cta-btn"><a href="#contact">Learn More</a></button>
+        </div>
+    </section>
+
+    <!-- Events Section with Countdown Timer -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <img src="C:\Users\anils\OneDrive\Desktop\New Year Event-2082\Website\Resources\New_year.jpg" alt="Nepali New Year Party">
+            <h3>Nepali New Year Party-2082</h3>
+            <p>April 13, 2025</p>
+            <p> 6:00 PM - 12:00 AM </p>
+            <p id="dashain-countdown"></p>
+            <button class="cta-btn"><a href="https://forms.office.com/r/AJbnrDgdXW">Register Now</a></button>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Lightbox -->
+    <section id="gallery" class="gallery">
+        <h2>Community Glimpses</h2>
+        <div class="gallery-container">
+            <img src="C:\Users\anils\OneDrive\Desktop\New Year Event-2082\Website\Resources\Group_photo.jpeg" alt="Event 1" onclick="openLightbox(this)">
+            <img src="event2.jpg" alt="Event 2" onclick="openLightbox(this)">
+            <img src="event3.jpg" alt="Event 3" onclick="openLightbox(this)">
+            <img src="event4.jpg" alt="Event 4" onclick="openLightbox(this)">
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="">
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <h2>Watch Our Community Highlights</h2>
+        <div class="video-placeholder">
+            <iframe width="560" height="315" src="https://youtu.be/dQw4w9WgXcQ?si=0xV1rRUC1WXVnMkk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Us Section with JavaScript Validation -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-box">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+	<footer>
+		<p>&copy; 2025 Nepali Community of Belleville. All rights reserved.</p>
+		<div class="social-media-right">
+			<a href="https://www.facebook.com/" target="_blank">
+				<img src="C:\Users\anils\OneDrive\Desktop\New Year Event-2082\Website\Resources\Facebook_logo.webp" alt="Facebook" onclick="openLightbox(this)">
+			</a>
+			<a href="https://www.instagram.com/nepalicommunityofbelleville" target="_blank">
+				<img src="C:\Users\anils\OneDrive\Desktop\New Year Event-2082\Website\Resources\Instagram_logo.webp" alt="Instagram" onclick="openLightbox(this)">
+			</a>
+		</div>
+		<div class="image-holder-left">
+			<a href="https://www.nepalicommunityofbelleville.ca" target="_blank">
+				<img src="C:\Users\anils\OneDrive\Desktop\New Year Event-2082\Website\Resources\Logo_Community_1.webp" alt="Website Link" onclick="openLightbox(this)">
+				</a>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+</body>
+</html>
