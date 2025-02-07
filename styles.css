@@ -77,11 +77,12 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    background-color: #000;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; /* Ensure text is readable */
+    color: black; /* Ensure text is readable */
     text-align: center;
 
 }
