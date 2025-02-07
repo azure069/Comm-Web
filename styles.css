@@ -77,10 +77,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('azure069/main/images/Hero_bg.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
     height: 500px;
     display: flex;
     align-items: center;
