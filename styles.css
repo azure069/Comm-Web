@@ -77,17 +77,17 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/Hero_bg.jpg'); /* Path to your image */
-    background-size: cover; /* Cover the full section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repetition */
-    height: 500px; /* Adjust height as needed */
+    background-image: url('azure069/main/images/Hero_bg.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white; /* Ensure text is readable */
     text-align: center;
-	images/Hero_bg.jpg
+
 }
 
 .hero::before {
@@ -97,7 +97,6 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent overlay for better text contrast */
 }
 
 .hero h1 {
@@ -120,15 +119,15 @@ nav ul li a:hover {
     padding: 12px 25px;
     border: none;
     font-size: 18px;
-    border-radius: 50px; /* Round shape */
+    border-radius: 50px; 
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s ease-in-out;
     display: inline-block;
-    width: auto; /* Auto-adjusts width based on content */
-    min-width: 120px; /* Ensures minimum size for smaller text */
+    width: auto; 
+    min-width: 120px; 
     text-align: center;
-    white-space: nowrap; /* Prevents text from wrapping */
+    white-space: nowrap; 
 }
 
 .cta-btn a {
