@@ -308,10 +308,9 @@ footer {
 
 /* Social Media Icons (Right Side) */
 .social-media-right {
-    display: flex;
-    justify-content: center;
+    display: none;
+    justify-content: right;
     gap: 15px;
-    opacity: 0; /* Hidden by default */
     transition: opacity 0.5s ease-in-out;
 }
 
