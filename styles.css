@@ -77,7 +77,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #000;
     height: 500px;
     display: flex;
     align-items: center;
@@ -97,12 +96,14 @@ nav ul li a:hover {
 }
 
 .hero h1 {
+    color: #FFF;
     font-size: 40px;
     font-weight: 700;
     z-index: 1;
 }
 
 .hero p {
+    color: #FFF;
     font-size: 18px;
     margin: 15px 0;
     z-index: 1;
