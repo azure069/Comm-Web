@@ -152,6 +152,10 @@ nav ul li a:hover {
     background: #f4f4f4;
 }
 
+.about p {
+    margin-bottom: 20px;
+}
+
 .about h2 {
     font-size: 32px;
     margin-bottom: 15px;
