@@ -159,6 +159,7 @@ nav ul li a:hover {
 
 /* Events Section */
 .events {
+    background: #000;
     padding: 60px 20px;
     text-align: center;
     background: #fff;
@@ -166,6 +167,7 @@ nav ul li a:hover {
 
 .events h2 {
     font-size: 32px;
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
