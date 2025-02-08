@@ -46,7 +46,7 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     image-rendering: crisp-edges;
     position: absolute;
-    left: 25%;
+    left: 10%;
     transform: translateX(-50%);
     top: 10px;  
     z-index: 9999;
