@@ -79,9 +79,10 @@ nav ul li a:hover {
 .hero {
     height: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white; /* Ensure text is readable */
+    color: white;
     text-align: center;
 
 }
@@ -96,14 +97,12 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    color: #FFF;
     font-size: 40px;
     font-weight: 700;
     z-index: 1;
 }
 
 .hero p {
-    color: #FFF;
     font-size: 18px;
     margin: 15px 0;
     z-index: 1;
