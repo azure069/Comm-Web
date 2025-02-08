@@ -302,51 +302,43 @@ footer {
     padding: 20px 0;
 }
 
-/* Social Media Icons (Right Side) */
+footer {
+    display: flex;
+    justify-content: space-between; /* Adjusts alignment */
+    align-items: center;
+    background-color: #222; /* Footer background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ensures it stays at the bottom */
+}
+
 .social-media-right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
+    gap: 15px;
 }
 
 .social-media-right img {
-    width: 30px;  /* Reduced size of social media icons */
-    height: 30px;
-    margin: 5px;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.social-media-right img:hover {
-    transform: scale(1.2);
-}
-
-/* Image Holder with Link (Left Side) */
-.image-holder-left {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 999;
+    width: 40px;
+    height: 40px;
 }
 
 .image-holder-left img {
-    width: 50px;  /* Adjust the size of the image */
-    height: 50px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    width: 80px;
+    height: auto;
 }
 
-.image-holder-left img:hover {
-    transform: scale(1.1);
+/* Ensure footer stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
 }
 
-.image-holder-left a {
-    text-decoration: none;
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
