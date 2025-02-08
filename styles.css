@@ -135,14 +135,13 @@ nav ul li a:hover {
 /* Hover Effect for Buttons */
 .cta-btn:hover, .cta-btn a:hover {
     background: #FFFFFF;
-    transform: scale(1.05);
 	color: #000;
 	
 }
 
-/* Button Inside Forms (Full Width for Contact Form) */
+/* Button Inside Forms */
 .contact form .cta-btn {
-    width: 100%; /* Full width for form submission */
+    width: 50%; 
 }
 
 /* About Us Section */
