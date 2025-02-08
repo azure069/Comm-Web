@@ -48,7 +48,7 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     image-rendering: crisp-edges;
     position: absolute;
-    left: 10%;
+    left: 20%;
     transform: translateX(-50%);
     top: 10px;  /* Adjust the value to control how much the logo exceeds */
     z-index: 9999;
