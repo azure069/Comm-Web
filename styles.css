@@ -1,7 +1,5 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +21,7 @@ header {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
-    padding: 30px 0; /* Increased the top and bottom padding to make the navbar thicker */
+    padding: 30px 0; 
     z-index: 1000;
 	background-color: #FFF;
 	color: #000;
@@ -50,7 +48,7 @@ header {
     position: absolute;
     left: 25%;
     transform: translateX(-50%);
-    top: 10px;  /* Adjust the value to control how much the logo exceeds */
+    top: 10px;  
     z-index: 9999;
 }
 
@@ -128,8 +126,7 @@ nav ul li a:hover {
 }
 
 .cta-btn a {
-    color: white; /* Ensures the link text is white */
-    text-decoration: none; /* Removes underline */
+    text-decoration: none; 
 }
 
 /* Hover Effect for Buttons */
@@ -209,7 +206,7 @@ nav ul li a:hover {
 }
 
 .gallery-container img {
-    width: 400px; /* Increased size for better quality */
+    width: 400px;
     height: 280px;
     object-fit: cover;
     border-radius: 8px;
@@ -341,11 +338,11 @@ footer {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; 
 }
 
 footer {
-    margin-top: auto; /* Pushes footer to the bottom */
+    margin-top: auto; 
 }
 
 
