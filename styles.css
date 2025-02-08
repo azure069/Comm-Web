@@ -297,20 +297,20 @@ nav ul li a:hover {
 footer {
     position: relative;
     text-align: center;
-    background: #333;
+    background: #FFFDD0;
     color: #fff;
     padding: 20px 0;
 }
 
 footer {
     display: flex;
-    justify-content: space-between; /* Adjusts alignment */
+    justify-content: space-between; 
     align-items: center;
-    background-color: #222; /* Footer background */
-    color: white;
+    background-color: #FFFDD0; 
+    color: #000000;
     padding: 20px;
     text-align: center;
-    position: relative; /* Ensures it stays at the bottom */
+    position: relative; 
 }
 
 .social-media-right {
@@ -324,6 +324,7 @@ footer {
 }
 
 .image-holder-left img {
+    display: flex;
     width: 80px;
     height: 80px;
     border-radius: 50%; 
