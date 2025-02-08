@@ -126,13 +126,13 @@ nav ul li a:hover {
 
 .cta-btn a {
     text-decoration: none; 
+    color: inherit;
 }
 
 /* Hover Effect for Buttons */
 .cta-btn:hover, .cta-btn a:hover {
     background: #FFFFFF;
-	color: #000000;
-	
+    color: #000000;	
 }
 
 /* Button Inside Forms */
