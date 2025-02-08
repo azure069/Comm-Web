@@ -109,8 +109,8 @@ nav ul li a:hover {
 
 /* Round Buttons */
 .cta-btn {
-    background: #000;
-    color: #fff;
+    background: #000000;
+    color: #FFFFFF;
     padding: 12px 25px;
     border: none;
     font-size: 18px;
@@ -132,7 +132,7 @@ nav ul li a:hover {
 /* Hover Effect for Buttons */
 .cta-btn:hover, .cta-btn a:hover {
     background: #FFFFFF;
-	color: #000;
+	color: #000000;
 	
 }
 
