@@ -50,6 +50,12 @@ header {
     transform: translateX(-50%);
     top: 10px;  
     z-index: 9999;
+    animation: fadeInLogo 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInLogo {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 nav ul {
