@@ -203,8 +203,13 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     } catch (error) {
         alert("Network error. Please check your connection and try again.");
     }
-});
+});  
 
+    window.onload = function() {
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }, 100);
+    };
 </script>
 </body>
 </html>
