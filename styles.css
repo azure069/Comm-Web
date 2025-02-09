@@ -201,6 +201,10 @@ nav ul li a:hover {
     text-align: center;
     padding: 60px 20px;
     background-color: #f8f8f8;
+}
+
+.gallery h2,
+.gallery h3 {
     margin-bottom: 20px;
 }
 
