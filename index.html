@@ -207,12 +207,12 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
     window.onload = function() {
         setTimeout(() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.scrollTo({ top: 0, behavior: "fast" });
         }, 100);
     };
 
     document.addEventListener("DOMContentLoaded", function () {
-    const heroSection = document.querySelector("#home");
+    const heroSection = document.querySelector("#home, #about, #events, #gallery, #contact");
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
