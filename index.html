@@ -128,7 +128,6 @@
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New Contact Form Submission">
         <button type="submit" class="cta-btn">Send Message</button>
-        <p id="response-message" style="display:none; color: green;">Message sent successfully!</p>
     </form>
     </section>
 
@@ -189,7 +188,7 @@
     let formData = new FormData(this);
 
     try {
-        let response = await fetch("https://formsubmit.co/alishneupane23@gmail.com", {
+        let response = await fetch("https://formsubmit.co/alishneupane23%40gmail.com", {
             method: "POST",
             body: formData
         });
