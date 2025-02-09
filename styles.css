@@ -23,8 +23,8 @@ header {
     background: rgba(0, 0, 0, 0.8);
     padding: 30px 0; 
     z-index: 1000;
-	background-color: #000;
-	color: #FFF;
+    background-color: #000;
+    color: #FFF;
 }
 
 .header-container {
