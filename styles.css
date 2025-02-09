@@ -23,8 +23,8 @@ header {
     background: rgba(0, 0, 0, 0.8);
     padding: 30px 0; 
     z-index: 1000;
-	background-color: #FFF;
-	color: #000;
+	background-color: #000;
+	color: #FFF;
 }
 
 .header-container {
@@ -69,13 +69,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     font-size: 16px;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #00F;
+    color: #FFF;
 }
 
 #home, #about, #events, #gallery, #contact {
