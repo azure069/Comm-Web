@@ -203,16 +203,17 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     } catch (error) {
         alert("Network error. Please check your connection and try again.");
     }
-});  
+});
 
-    window.onload = function() {
-        setTimeout(() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }, 100);
-    };
+window.onload = function() {
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+};
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const section = document.querySelector("#home, #about");
+document.addEventListener("DOMContentLoaded", function () {
+    // Correctly select all the sections you want to observe
+    const sections = document.querySelectorAll("#home, #about");  // Use querySelectorAll for multiple sections
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -222,9 +223,12 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         });
     }, { threshold: 0.3 });
 
+    // Apply the observer to each selected section
     sections.forEach(section => {
         observer.observe(section);
     });
+});
+
 	
 </script>
 </body>
