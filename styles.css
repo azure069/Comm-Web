@@ -443,6 +443,10 @@ footer {
     color: #FFFFFF;
 }
 
+.container h2 {
+    margin-bottom: 20px;
+}
+
 .donation-options label {
     font-size: 16px;
     font-weight: bold;
@@ -479,7 +483,7 @@ footer {
 
 .donation-options a {
     text-decoration: none; 
-    color: inherit;
+    color: #FFF;
     margin-bottom: 20px;
 }
 
