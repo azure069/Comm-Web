@@ -433,15 +433,9 @@ footer {
     display: none; 
 }
 
- <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
+
+
+  .container {
             width: 80%;
             margin: 20px auto;
             background: white;
@@ -488,3 +482,6 @@ footer {
         .donation-options a:hover {
             background-color: #4cae4c;
         }
+
+
+      
