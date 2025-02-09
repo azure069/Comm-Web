@@ -125,8 +125,10 @@
         <div class="input-box">
             <textarea name="message" id="message" placeholder="Your Message" required></textarea>
         </div>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
         <button type="submit" class="cta-btn">Send Message</button>
-        <p id="response-message" style="display:none; color: black;">Message sent successfully!</p>
+        <p id="response-message" style="display:none; color: green;">Message sent successfully!</p>
     </form>
     </section>
 
@@ -182,12 +184,12 @@
 
     
     document.getElementById("contact-form").addEventListener("submit", async function(event) {
-        event.preventDefault(); 
+    event.preventDefault(); 
 
-        let formData = new FormData(this);
+    let formData = new FormData(this);
 
     try {
-        let response = await fetch("https://formsubmit.co/azure4946%40gmail.com", {
+        let response = await fetch("https://formsubmit.co/alishneupane23@gmail.com", {
             method: "POST",
             body: formData
         });
@@ -196,11 +198,11 @@
             document.getElementById("response-message").style.display = "block";
             this.reset();
         } else {
-            alert("There was an error sending your message. Please try again.");
+            alert("There was an error sending your message.");
         }
     } catch (error) {
-        alert("Network error. Please check your connection and try again.");
-        }
+        alert("Network error. Please try again.");
+    }
     });
 
 
