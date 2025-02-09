@@ -436,13 +436,16 @@ footer {
 
 
 .donation-options {
-        margin-top: 20px;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
 }
 
 .donation-options label {
-            font-size: 16px;
-            font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 }
+
 .donation-options select,
 .donation-options input[type="number"] {
             margin: 10px;
