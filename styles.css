@@ -448,6 +448,11 @@ footer {
     margin-bottom: 20px;
 }
 
+.container a {
+    text-decoration: none; 
+    color: #FFF;
+} 
+
 .donation-options label {
     font-size: 16px;
     font-weight: bold;
