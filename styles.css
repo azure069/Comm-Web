@@ -276,6 +276,10 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.video-section h3 {
+    margin-bottom: 20px;
+}
+
 /* Contact Section */
 .contact {
     text-align: center;
