@@ -413,6 +413,8 @@ footer {
     font-size: 16px;
     cursor: pointer;
     border-radius: 50px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #scrollToTopBtn:hover {
