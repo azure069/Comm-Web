@@ -438,6 +438,7 @@ footer {
 .container {
     text-align: center;
     padding: 60px 20px;
+    margin-bottom: 20px;
     background-color: #000000;
     color: #FFFFFF;
 }
