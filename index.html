@@ -183,22 +183,21 @@
     }
 
 document.getElementById("contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
 
     let formData = new FormData(this);
 
     try {
-        let response = await fetch("https://formsubmit.co/YOUR_EMAIL", {
+        let response = await fetch("https://formsubmit.co/alishneupane23%40gmail.com", {
             method: "POST",
-            mode: "no-cors",  // Fixes CORS issues
+            mode: "no-cors", 
             body: formData
         });
 
         let message = document.getElementById("response-message");
-        message.style.display = "block"; // Show success message
-        this.reset(); // Clear the form after submission
+        message.style.display = "block"; 
+        this.reset(); 
 
-        // Hide success message after 2 seconds
         setTimeout(() => {
             message.style.display = "none";
         }, 2000);
