@@ -195,8 +195,13 @@
         });
 
         if (response.ok) {
-            document.getElementById("response-message").style.display = "block";
-            this.reset();
+            let message = document.getElementById("response-message");
+            message.style.display = "block"; 
+            this.reset(); 
+		
+            setTimeout(() => {
+                message.style.display = "none";
+            }, 2000);   
         } else {
             alert("There was an error sending your message.");
         }
