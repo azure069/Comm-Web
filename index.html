@@ -115,7 +115,7 @@
     <!-- Contact Us Section -->
     <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form id="contact-form" action="https://formsubmit.co/4ed244abc579109dcfde6419b4e3bce5" method="POST">
+    <form id="contact-form">
         <div class="input-box">
             <input type="text" name="name" id="name" placeholder="Your Name" required>
         </div>
@@ -126,9 +126,10 @@
             <textarea name="message" id="message" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="cta-btn">Send Message</button>
-        <input type="hidden" name="_captcha" value="false">
+        <p id="response-message" style="display:none; color: green;">Message sent successfully!</p>
     </form>
     </section>
+
 
 
     <footer>
@@ -142,6 +143,7 @@
 			</a>
 		</div>		
     </footer>
+	
 <script>
     window.onscroll = function () {
         let button = document.getElementById("scrollToTopBtn");
@@ -177,6 +179,31 @@
             }
         }, 1000);
     }
+
+    
+    document.getElementById("contact-form").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        let formData = new FormData(this);
+
+    try {
+        let response = await fetch("https://formsubmit.co/YOUR_EMAIL", {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.ok) {
+            document.getElementById("response-message").style.display = "block";
+            this.reset(); // Clear the form after submission
+        } else {
+            alert("There was an error sending your message. Please try again.");
+        }
+    } catch (error) {
+        alert("Network error. Please check your connection and try again.");
+        }
+    });
+
+
 </script>
 </body>
 </html>
