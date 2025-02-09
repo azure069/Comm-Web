@@ -421,3 +421,14 @@ footer {
     background-color: #FFFFFF;
     color: #000000;
 }
+
+#scrollToTopBtn.visible {
+    display: block;
+    opacity: 1;
+}
+
+#scrollToTopBtn.hidden {
+    opacity: 0;
+    display: none; 
+}
+
