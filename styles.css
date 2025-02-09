@@ -78,13 +78,13 @@ nav ul li a:hover {
     color: #00F;
 }
 
-#home {
+#home, #about, #events, #gallery, #contact {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
-#home.visible {
+#home.visible, #about.visible, #events.visible, #gallery..visible, #contact.visible {
     opacity: 1;
     transform: translateY(0);
 }
