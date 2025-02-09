@@ -435,9 +435,7 @@ footer {
 
 
 
-.donation-options,
-.donation-options p,
-.donation-options h3 {
+.container {
     text-align: center;
     padding: 60px 20px;
     background-color: #000000;
