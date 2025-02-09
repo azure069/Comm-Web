@@ -114,14 +114,14 @@ nav ul li a:hover {
     font-size: 40px;
     font-weight: 700;
     z-index: 1;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 .hero p {
     font-size: 18px;
     margin: 15px 0;
     z-index: 1;
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 /* Round Buttons */
