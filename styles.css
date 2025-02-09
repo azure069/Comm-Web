@@ -433,3 +433,58 @@ footer {
     display: none; 
 }
 
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d9534f;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .donation-options {
+            margin-top: 20px;
+        }
+        .donation-options label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .donation-options select,
+        .donation-options input[type="number"] {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .donation-options a,
+        .donation-options button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .donation-options button:hover,
+        .donation-options a:hover {
+            background-color: #4cae4c;
+        }
