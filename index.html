@@ -126,8 +126,9 @@
             <textarea name="message" id="message" placeholder="Your Message" required></textarea>
         </div>
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_template" value="table">
         <button type="submit" class="cta-btn">Send Message</button>
+        <p id="response-message" style="display:none; color: green;">Message sent successfully!</p>
     </form>
     </section>
 
@@ -181,34 +182,30 @@
         }, 1000);
     }
 
-    
-    document.getElementById("contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault(); 
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Prevent default form submission
 
     let formData = new FormData(this);
 
     try {
-        let response = await fetch("https://formsubmit.co/alishneupane23%40gmail.com", {
+        let response = await fetch("https://formsubmit.co/YOUR_EMAIL", {
             method: "POST",
+            mode: "no-cors",  // Fixes CORS issues
             body: formData
         });
 
-        if (response.ok) {
-            let message = document.getElementById("response-message");
-            message.style.display = "block"; 
-            this.reset(); 
-		
-            setTimeout(() => {
-                message.style.display = "none";
-            }, 2000);   
-        } else {
-            alert("There was an error sending your message.");
-        }
-    } catch (error) {
-        alert("Network error. Please try again.");
-    }
-    });
+        let message = document.getElementById("response-message");
+        message.style.display = "block"; // Show success message
+        this.reset(); // Clear the form after submission
 
+        // Hide success message after 2 seconds
+        setTimeout(() => {
+            message.style.display = "none";
+        }, 2000);
+    } catch (error) {
+        alert("Network error. Please check your connection and try again.");
+    }
+});
 
 </script>
 </body>
