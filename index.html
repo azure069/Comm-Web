@@ -210,6 +210,21 @@ document.getElementById("contact-form").addEventListener("submit", async functio
             window.scrollTo({ top: 0, behavior: "smooth" });
         }, 100);
     };
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const heroSection = document.querySelector("#home");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(heroSection);
+    });
+	
 </script>
 </body>
 </html>
