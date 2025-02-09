@@ -212,8 +212,7 @@ window.onload = function() {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Correctly select all the sections you want to observe
-    const sections = document.querySelectorAll("#home, #about");  // Use querySelectorAll for multiple sections
+    const sections = document.querySelectorAll("#home, #about, #events, #gallery, #contact");
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
