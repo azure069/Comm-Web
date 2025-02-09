@@ -435,39 +435,50 @@ footer {
 
 
 
+.donation-options {
+        margin-top: 20px;
+}
 
-        .donation-options {
-            margin-top: 20px;
-        }
-        .donation-options label {
+.donation-options label {
             font-size: 16px;
             font-weight: bold;
-        }
-        .donation-options select,
-        .donation-options input[type="number"] {
+}
+.donation-options select,
+.donation-options input[type="number"] {
             margin: 10px;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
-        .donation-options a,
-        .donation-options button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #5cb85c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .donation-options button:hover,
-        .donation-options a:hover {
-            background-color: #4cae4c;
-        }
+}
+
+.donation-options button {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px; 
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    width: auto; 
+    min-width: 120px; 
+    text-align: center;
+    white-space: nowrap; 
+}
+
+.donation-options a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.donation-options button:hover,
+.donation-options a:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
 
 
       
