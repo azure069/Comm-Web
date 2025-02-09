@@ -435,10 +435,13 @@ footer {
 
 
 
-.donation-options {
+.donation-options,
+.donation-options p,
+.donation-options h3 {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f8f8f8;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .donation-options label {
@@ -456,8 +459,8 @@ footer {
 }
 
 .donation-options button {
-    background: #000000;
-    color: #FFFFFF;
+    background: #FFFFFF;
+    color: #000000;
     padding: 12px 25px;
     border: none;
     font-size: 18px;
@@ -479,8 +482,8 @@ footer {
 
 .donation-options button:hover,
 .donation-options a:hover {
-    background: #FFFFFF;
-    color: #000000;
+    background: #000000;
+    color: #FFFFFF;
 }
 
 
