@@ -222,7 +222,8 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         });
     }, { threshold: 0.3 });
 
-    observer.observe(heroSection);
+    sections.forEach(section => {
+        observer.observe(section);
     });
 	
 </script>
