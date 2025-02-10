@@ -481,6 +481,7 @@ footer {
             display: block;  
             box-sizing: border-box;
             justify-content: center;
+            margin: auto;
 }
 
 .donation-options button {
@@ -545,7 +546,7 @@ footer {
 }
 
 .popup-content h2 {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
 }
 
