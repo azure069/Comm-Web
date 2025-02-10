@@ -469,6 +469,19 @@ footer {
     color: #000000;
 }
 
+
+    #custom-amount {
+            width: 250px;  /* Adjust width to fit content */
+            height: 40px;  /* Adjust height for better visibility */
+            font-size: 16px;
+            text-align: center; /* Center the placeholder text */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;  
+            box-sizing: border-box;
+}
+
 .donation-options button {
     background: #FFFFFF;
     color: #000000;
