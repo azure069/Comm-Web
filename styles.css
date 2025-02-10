@@ -549,24 +549,24 @@ footer {
 }
 
 .popup-content h2 {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
 }
 
 /* The Close Button */
 .close {
     position: absolute;
-    bottom: 10px; /* Distance from the bottom of the popup */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for exact center */
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: #000;
     color: #FFF;
-    font-size: 28px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 10px 20px; /* Added padding for better appearance */
-    border-radius: 5px; /* Optional: rounded corners */
+    padding: 10px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    text-align: center; /* Center text within button */
+    text-align: center; 
 }
 
 .close:hover,
