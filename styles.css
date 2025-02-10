@@ -498,6 +498,17 @@ footer {
     color: #FFFFFF;
 }
 
+#custom-amount {
+    margin-top: 10px;
+    display: block;
+    width: 50%; /* Set width to control the size of the input */
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 300px; /* Optional: limit max width */
+}
+
 /* The Modal (background) */
 .popup {
     display: none; /* Hidden by default */
