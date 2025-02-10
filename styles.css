@@ -482,6 +482,7 @@ footer {
             box-sizing: border-box;
             justify-content: center;
             margin: auto;
+            margin-bottom: 15px;
 }
 
 .donation-options button {
