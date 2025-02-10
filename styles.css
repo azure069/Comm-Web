@@ -91,6 +91,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    background: black;
     height: 1000px;
     display: flex;
     flex-direction: column;
