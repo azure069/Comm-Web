@@ -558,6 +558,7 @@ footer {
 .close {
     position: absolute;
     bottom: 10px; 
+    margin-top: 15px;
     left: 50%; 
     transform: translateX(-50%); 
     background-color: #000;
