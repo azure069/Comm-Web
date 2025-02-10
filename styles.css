@@ -480,6 +480,7 @@ footer {
             border-radius: 5px;
             display: block;  
             box-sizing: border-box;
+            justify-content: center;
 }
 
 .donation-options button {
@@ -538,7 +539,7 @@ footer {
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
-    font-size: 14px;
+    font-size: 12px;
     word-wrap: break-word;
     white-space: normal;
 }
