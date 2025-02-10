@@ -544,6 +544,11 @@ footer {
     white-space: normal;
 }
 
+.popup-content h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
