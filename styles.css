@@ -546,7 +546,7 @@ footer {
     font-size: 12px;
     word-wrap: break-word;
     white-space: normal;
-    position: relative; 
+    position: relative;
 }
 
 .popup-content h2 {
@@ -556,10 +556,11 @@ footer {
 
 /* The Close Button */
 .close {
-    bottom: 10px; 
-    margin-top: 30px;
+    position: absolute; 
+    top: 100%;
     left: 50%; 
     transform: translateX(-50%); 
+    margin-top: 10px; 
     background-color: #000;
     color: #FFF;
     font-size: 12px;
@@ -567,7 +568,7 @@ footer {
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
-    text-align: center; 
+    text-align: center;
 }
 
 .close:hover,
