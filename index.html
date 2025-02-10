@@ -128,11 +128,24 @@
             <input type="number" id="custom-amount" placeholder="Enter custom amount" style="display:none;">
             <button onclick="window.location.href='mailto:[Insert Email Address]?subject=E-Transfer Donation&body=Please send your e-transfer to [Insert Email Address].'">Donate via E-Transfer</button>
         </div>
-
+        <!-- Popup Modal -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Interac E-Transfer Details</h2>
+                <p>Please send your donation via Interac e-Transfer to the following details:</p>
+                <p><strong>Legal Name:</strong> Jenish Aatreya </p>
+                <p><strong>Email for E-Transfer:</strong> zenishaatreya57@gmail.com</p>
+                <p><strong>Amount:</strong> Please enter the amount in the transfer message.</p>
+                <p>Once completed, you'll receive a confirmation email.</p>
+            </div>
+        </div>
         <p>For any inquiries, feel free to contact us at <a href="mailto:nepalicommunityofbelleville@gmail.com"><strong>E-MAIL</strong></a> or call <strong>+1 (613) 848-5968</strong>.</p>
         <p><strong>Thank you for your generosity!</strong></p>
     </div>
     </section>
+
+    
 	
     <!-- Contact Us Section -->
     <section id="contact" class="contact">
