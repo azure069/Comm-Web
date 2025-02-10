@@ -557,7 +557,7 @@ footer {
 /* The Close Button */
 .close {
     position: absolute; 
-    bottom: 98%;
+    bottom: 20px;
     left: 50%; 
     transform: translateX(-50%); 
     margin-top: 10px; 
