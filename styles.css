@@ -498,22 +498,12 @@ footer {
     color: #FFFFFF;
 }
 
-#custom-amount {
-    margin-top: 10px;
-    display: block;
-    width: 50%; /* Set width to control the size of the input */
-    padding: 8px;
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 20px;
-    max-width: 300px; /* Optional: limit max width */
-}
 
 /* The Modal (background) */
 .popup {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
-    z-index: 1; /* Sit on top */
+    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%;
@@ -536,6 +526,8 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     font-size: 14px;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 /* The Close Button */
