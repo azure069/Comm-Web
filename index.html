@@ -278,6 +278,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+    // Function to open the popup and copy the amount
+    function openPopup() {
+        let amount = document.getElementById("amount").value;
+
+        if (amount === "custom") {
+            amount = document.getElementById("custom-amount").value;
+        }
+
+        let emailLink = 'mailto:[Insert Email Address]?subject=E-Transfer Donation&body=Please send your e-transfer of $' + amount + ' to [Insert Email Address].';
+        window.location.href = emailLink;
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    document.getElementById('amount').addEventListener('change', function() {
+        if (this.value === 'custom') {
+            document.getElementById('custom-amount').style.display = 'block';
+        } else {
+            document.getElementById('custom-amount').style.display = 'none';
+        }
+    });
+
 </script>
 </body>
 </html>
