@@ -5,48 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
             text-align: center;
-            padding: 50px;
-            background-color: #f8f9fa;
         }
+
         .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: #333;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
         }
+
         h1 {
-            font-size: 50px;
+            font-size: 80px;
+            font-weight: 700;
             color: #dc3545;
+            margin: 0;
         }
+
         p {
             font-size: 18px;
-            color: #333;
+            margin-top: 15px;
+            color: #ccc;
         }
-        .home-btn {
+
+        .cta-btn {
+            background: #000;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
         }
-        .home-btn:hover {
-            background-color: #0056b3;
+
+        .cta-btn a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Hover Effect for Buttons */
+        .cta-btn:hover, .cta-btn a:hover {
+            background: #fff;
+            color: #000;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>404</h1>
-        <p>Oops! The page you are looking for cannot be found.</p>
-        <a href="/" class="home-btn">Go Home</a>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <a href="/" class="cta-btn">Go Back Home</a>
     </div>
 </body>
 </html>
