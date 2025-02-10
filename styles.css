@@ -555,23 +555,27 @@ footer {
 /* The Close Button */
 .close {
     position: absolute;
-    bottom: 10px; /* Distance from the bottom of the popup */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for exact center */
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: #000;
     color: #FFF;
     font-size: 28px;
     font-weight: bold;
+    padding: 10px 20px; 
+    border-radius: 50px; 
     cursor: pointer;
+    text-align: center; 
 }
 
 .close:hover,
 .close:focus {
-    background-color: #FFF
+    background-color: #FFF;
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
+
 
 
       
