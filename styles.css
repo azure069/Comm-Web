@@ -534,10 +534,9 @@ footer {
 .popup-content {
     background-color: #fff;
     color: #000;
-    margin-top: 20px;
-    margin-bottom: 95px;
     margin: 15% auto;
     padding: 20px;
+    padding-bottom: 60px;
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;
@@ -554,16 +553,19 @@ footer {
     text-align: center;
 }
 
+.popup-content p:last-of-type {
+    margin-bottom: 40px;
+}
+
 /* The Close Button */
 .close {
-    position: absolute; 
-    bottom: 20px;
-    left: 50%; 
-    transform: translateX(-50%); 
-    margin-top: 10px; 
+    position: absolute;
+    bottom: 15px; 
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #000;
     color: #FFF;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 50px;
