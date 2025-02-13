@@ -140,6 +140,7 @@ nav ul li a:hover {
     min-width: 120px; 
     text-align: center;
     white-space: nowrap; 
+    z-index: 9999;
 }
 
 .cta-btn a {
