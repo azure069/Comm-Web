@@ -6,7 +6,6 @@ Welcome to the official repository for the **Nepali Community of Belleville** we
 - [About](#about)
 - [Website](#website)
 - [Features](#features)
-- [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -33,14 +32,6 @@ The official website is live at: [https://www.nepalicommunityofbelleville.ca](ht
 - **Dynamic Animations**: Smooth transitions and interactive elements to engage visitors.
 - **Video Highlights**: Embedded videos of important community moments.
 - **Contact and Support**: A contact form for inquiries and a section for donations.
-
-## Installation
-
-To run the project locally, follow these steps:
-
-1. Clone the repository (only for the collaborators):
-   ```bash
-      git clone https://github.com/azure069/Comm-Web.git
 
 ## License
 
