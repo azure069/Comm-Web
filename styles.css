@@ -282,6 +282,13 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
 .video-placeholder iframe {
     width: 80%;
     height: 400px;
