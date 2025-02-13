@@ -38,6 +38,6 @@ The official website is live at: [https://www.nepalicommunityofbelleville.ca](ht
 
 To run the project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository (only for the collaborators):
    ```bash
       git clone https://github.com/azure069/Comm-Web.git
