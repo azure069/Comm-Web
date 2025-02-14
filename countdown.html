@@ -94,15 +94,16 @@
             font-size: 3em;
             font-weight: bold;
             color: white;
-            position: fixed;
-            top: 50%;
-            left: 50%;
+            position: static;
+            top: auto;
+            left: auto;
             transform: translate(-50%, -50%);
             animation: fadeIn 2s ease-in-out, bloopAnimation 0.5s infinite alternate ease-in-out;
             text-shadow: 5px 5px 15px rgba(255, 255, 0, 0.8);
             text-align: center;
             width: max-content; /* Ensures it only takes up as much space as needed */
             white-space: nowrap; /* Prevents text from breaking into multiple lines */
+            margin: auto;
         }
 
         @keyframes fadeIn {
@@ -172,7 +173,7 @@
             }, 1000);
         }
 
-        countdown('2025-02-13T21:00:00'); 
+        countdown('2025-02-13T21:07:00'); 
     </script>
 </body>
 </html>
