@@ -91,7 +91,7 @@
         /* Happy New Year message with blooping animation */
         .new-year-message {
             display: none;
-            font-size: 3em; /* Reduced font size */
+            font-size: 3em;
             font-weight: bold;
             color: white;
             position: fixed;
@@ -101,8 +101,8 @@
             animation: fadeIn 2s ease-in-out, bloopAnimation 0.5s infinite alternate ease-in-out;
             text-shadow: 5px 5px 15px rgba(255, 255, 0, 0.8);
             text-align: center;
-            width: 100%;
-            justify-content: center;
+            width: auto; /* Changed from 100% */
+            white-space: nowrap; /* Prevents text from wrapping */
         }
 
 
@@ -173,7 +173,7 @@
             }, 1000);
         }
 
-        countdown('2025-02-13T20:50:00'); 
+        countdown('2025-02-13T20:56:00'); 
     </script>
 </body>
 </html>
