@@ -41,12 +41,18 @@
         }
 
         #countdown {
-            font-size: 3.2em;
+            font-size: 2.2em;
             font-weight: bold;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
         }
 
-        /* Blooping animation when countdown is at 15 seconds */
+        /* When 15 seconds left */
+        .big-countdown {
+            font-size: 6em;
+            animation: bloopAnimation 0.5s infinite alternate ease-in-out;
+        }
+
+        /* Blooping animation */
         .bloop {
             animation: bloopAnimation 0.5s infinite alternate ease-in-out;
         }
@@ -82,16 +88,17 @@
             color: #000000;
         }
 
+        /* Happy New Year message with blooping animation */
         .new-year-message {
             display: none;
-            font-size: 4em;
+            font-size: 5em;
             font-weight: bold;
             color: white;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            animation: fadeIn 2s ease-in-out;
+            animation: fadeIn 2s ease-in-out, bloopAnimation 0.5s infinite alternate ease-in-out;
         }
 
         @keyframes fadeIn {
@@ -102,16 +109,16 @@
 </head>
 <body>
     <div class="countdown-container" id="countdown-container">
-        <h2>Countdown to Nepali New Year 2082!</h2>
+        <h2 id="title">Countdown to Nepali New Year 2082!</h2>
         <p id="countdown"></p>
-        <a href="/" class="back-btn">Back to Home</a>
+        <a href="/" class="back-btn" id="back-btn">Back to Home</a>
     </div>
 
     <p id="new-year-message" class="new-year-message">🎉 Happy New Year 2082! 🎉</p>
 
     <script>
         function startConfetti() {
-            let duration = 5 * 1000;
+            let duration = 30 * 1000;
             let end = Date.now() + duration;
 
             function randomConfetti() {
@@ -119,7 +126,7 @@
                     particleCount: 5,
                     spread: 160,
                     startVelocity: 30,
-                    origin: { x: Math.random() > 0.5 ? 0 : 1, y: Math.random() * 0.5 } // Left or Right side
+                    origin: { x: Math.random() > 0.5 ? 0 : 1, y: Math.random() * 0.5 }
                 });
 
                 if (Date.now() < end) {
@@ -145,9 +152,11 @@
                     // Normal countdown
                     document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
                 } else if (distance > 0) { 
-                    // Only show seconds with blooping animation at 15 seconds
-                    document.getElementById("countdown").innerHTML = `${seconds}s`;
-                    document.getElementById("countdown").classList.add("bloop");
+                    // Only show seconds with huge blooping animation
+                    document.getElementById("title").style.display = "none";
+                    document.getElementById("back-btn").style.display = "none";
+                    document.getElementById("countdown").innerHTML = `${seconds}`;
+                    document.getElementById("countdown").classList.add("big-countdown");
                 } else {
                     // Timer hits zero
                     clearInterval(timer);
@@ -158,7 +167,7 @@
             }, 1000);
         }
 
-        countdown('2025-02-13T20:15:00'); 
+        countdown('2025-04-14T00:00:00'); 
     </script>
 </body>
 </html>
