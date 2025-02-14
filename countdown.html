@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -43,6 +43,21 @@
         #countdown {
             font-size: 2.2em;
             font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Blooping animation when countdown is at 15 seconds */
+        .bloop {
+            animation: bloopAnimation 0.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes bloopAnimation {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.3);
+            }
         }
 
         .back-btn {
@@ -51,49 +66,68 @@
             padding: 12px 25px;
             border: none;
             font-size: 18px;
-            border-radius: 50px; 
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
             transition: 0.3s ease-in-out;
             display: inline-block;
-            width: auto; 
-            min-width: 120px; 
+            min-width: 120px;
             text-align: center;
-            white-space: nowrap; 
+            white-space: nowrap;
             z-index: 9999;
         }
 
-        .back-btn hover {
+        .back-btn:hover {
             background: #FFFFFF;
             color: #000000;
         }
-        
+
         .new-year-message {
             display: none;
-            font-size: 3em;
+            font-size: 4em;
             font-weight: bold;
             color: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <div class="countdown-container">
+    <div class="countdown-container" id="countdown-container">
         <h1>Countdown to Nepali New Year 2082!</h1>
         <p id="countdown"></p>
-        <p id="new-year-message" class="new-year-message">🎉 Happy New Year 2082! 🎉</p>
         <a href="/" class="back-btn">Back to Home</a>
     </div>
+
+    <p id="new-year-message" class="new-year-message">🎉 Happy New Year 2082! 🎉</p>
 
     <script>
         function startConfetti() {
             let duration = 5 * 1000;
             let end = Date.now() + duration;
-            (function frame() {
-                confetti({ particleCount: 5, spread: 100 });
+
+            function randomConfetti() {
+                confetti({
+                    particleCount: 5,
+                    spread: 160,
+                    startVelocity: 30,
+                    origin: { x: Math.random() > 0.5 ? 0 : 1, y: Math.random() * 0.5 } // Left or Right side
+                });
+
                 if (Date.now() < end) {
-                    requestAnimationFrame(frame);
+                    requestAnimationFrame(randomConfetti);
                 }
-            })();
+            }
+
+            randomConfetti();
         }
 
         function countdown(eventDate) {
@@ -107,18 +141,24 @@
                 let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-                if (distance < 0) {
+                if (distance > 15000) { 
+                    // Normal countdown
+                    document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                } else if (distance > 0) { 
+                    // Only show seconds with blooping animation at 15 seconds
+                    document.getElementById("countdown").innerHTML = `${seconds}s`;
+                    document.getElementById("countdown").classList.add("bloop");
+                } else {
+                    // Timer hits zero
                     clearInterval(timer);
-                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("countdown-container").style.display = "none";
                     document.getElementById("new-year-message").style.display = "block";
                     startConfetti();
                 }
             }, 1000);
         }
 
-        countdown('2025-02-13T20:00:00');
+        countdown('2025-02-13T20:08:00'); 
     </script>
 </body>
 </html>
