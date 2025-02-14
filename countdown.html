@@ -48,7 +48,7 @@
 
         /* When 15 seconds left */
         .big-countdown {
-            font-size: 6em;
+            font-size: 10em;
             animation: bloopAnimation 0.5s infinite alternate ease-in-out;
         }
 
@@ -91,7 +91,7 @@
         /* Happy New Year message with blooping animation */
         .new-year-message {
             display: none;
-            font-size: 5em;
+            font-size: 7em;
             font-weight: bold;
             color: white;
             position: absolute;
@@ -99,6 +99,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             animation: fadeIn 2s ease-in-out, bloopAnimation 0.5s infinite alternate ease-in-out;
+            text-shadow: 5px 5px 15px rgba(255, 255, 0, 0.8);
         }
 
         @keyframes fadeIn {
@@ -152,9 +153,10 @@
                     // Normal countdown
                     document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
                 } else if (distance > 0) { 
-                    // Only show seconds with huge blooping animation
+                    // Hide everything except countdown
                     document.getElementById("title").style.display = "none";
                     document.getElementById("back-btn").style.display = "none";
+                    document.getElementById("countdown-container").style.background = "none";
                     document.getElementById("countdown").innerHTML = `${seconds}`;
                     document.getElementById("countdown").classList.add("big-countdown");
                 } else {
@@ -167,7 +169,7 @@
             }, 1000);
         }
 
-        countdown('2025-02-13T20:25:00'); 
+        countdown('2025-02-13T20:31:00'); 
     </script>
 </body>
 </html>
