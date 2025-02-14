@@ -6,6 +6,7 @@
     <title>Event Countdown | Nepali Community of Belleville</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
         
@@ -28,61 +29,38 @@
         }
 
         .countdown-container {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 50px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 12px;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.8em;
             font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         #countdown {
-            font-size: 2.5em;
+            font-size: 2.2em;
             font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
 
         .back-btn {
             margin-top: 20px;
             padding: 12px 25px;
-            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            background: #ffcc00;
             color: black;
             text-decoration: none;
-            font-size: 1.5em;
-            border-radius: 50px;
-            box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.6);
-            transition: all 0.3s ease-in-out;
+            font-size: 1.4em;
+            border-radius: 5px;
             display: inline-block;
         }
 
-        .back-btn:hover {
-            background: linear-gradient(45deg, #ff6600, #ffcc00);
-            box-shadow: 0px 6px 15px rgba(255, 165, 0, 0.9);
-            transform: scale(1.1);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            #countdown {
-                font-size: 2em;
-            }
-            .back-btn {
-                font-size: 1.2em;
-            }
+        .new-year-message {
+            display: none;
+            font-size: 3em;
+            font-weight: bold;
+            color: yellow;
         }
     </style>
 </head>
@@ -90,10 +68,22 @@
     <div class="countdown-container">
         <h1>Countdown to Nepali New Year 2082!</h1>
         <p id="countdown"></p>
+        <p id="new-year-message" class="new-year-message">🎉 Happy New Year 2082! 🎉</p>
         <a href="/" class="back-btn">Back to Home</a>
     </div>
 
     <script>
+        function startConfetti() {
+            let duration = 5 * 1000;
+            let end = Date.now() + duration;
+            (function frame() {
+                confetti({ particleCount: 5, spread: 100 });
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        }
+
         function countdown(eventDate) {
             let countDownDate = new Date(eventDate).getTime();
             let timer = setInterval(function () {
@@ -109,7 +99,9 @@
 
                 if (distance < 0) {
                     clearInterval(timer);
-                    document.getElementById("countdown").innerHTML = "The Event Has Started!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("new-year-message").style.display = "block";
+                    startConfetti();
                 }
             }, 1000);
         }
