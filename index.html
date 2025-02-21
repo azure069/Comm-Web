@@ -122,13 +122,13 @@
        <!-- Popup Modal -->
         <div id="popup" class="popup">
             <div class="popup-content">
-        	<span class="close" onclick="closePopup()">Close</span>
-        	<h2>Interac E-Transfer Details</h2>
-        	<p>Please send your donation via Interac e-Transfer to the following details:</p>
-        	<p><strong>Legal Name:</strong> Jenish Aatreya</p>
-        	<p><strong>Email for E-Transfer:</strong> zenishaatreya57@gmail.com</p>
-        	<p>Once completed, you'll receive a confirmation email.</p>
-	    </div>
+                <span class="close" onclick="closePopup()">Close</span>
+                <h2>Interac E-Transfer Details</h2>
+                <p>Please send your donation via Interac e-Transfer to:</p>
+                <p><strong>Legal Name:</strong> Jenish Aatreya</p>
+                <p><strong>Email for E-Transfer:</strong> zenishaatreya57@gmail.com</p>
+                <p>Once completed, you'll receive a confirmation email.</p>
+            </div>
         </div>
         <p>For any inquiries, feel free to contact us at <a href="mailto:nepalicommunityofbelleville@gmail.com"><strong>E-MAIL</strong></a> or call <strong>+1 (613) 848-5968</strong>.</p>
         <p><strong>Thank you for your generosity!</strong></p>
@@ -266,20 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-    // Function to open the popup and copy the amount
+    // Function to open the popup
 function openPopup() {
-    // Get the selected donation amount
-    let amount = document.getElementById("amount").value;
-
-    // If the custom amount is selected, get the value from the custom input
-    if (amount === "custom") {
-        amount = document.getElementById("custom-amount").value;
-    }
-
-    // Update the modal with the selected amount
-    document.getElementById("selected-amount").textContent = amount;
-
-    // Show the popup modal
     document.getElementById("popup").style.display = "block";
 }
 
@@ -288,15 +276,13 @@ function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
 
-// Show custom amount input if 'Custom Amount' is selected
-document.getElementById('amount').addEventListener('change', function() {
-    if (this.value === 'custom') {
-        document.getElementById('custom-amount').style.display = 'block';
-    } else {
-        document.getElementById('custom-amount').style.display = 'none';
+// Close the popup when clicking outside of it
+window.onclick = function(event) {
+    let popup = document.getElementById("popup");
+    if (event.target === popup) {
+        popup.style.display = "none";
     }
-});
-
+};
 </script>
 </body>
 </html>
