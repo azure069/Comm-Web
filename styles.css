@@ -391,6 +391,12 @@ footer {
         font-size: 30px;
     }
 
+    #about {
+        opacity: 1 !important;
+        transform: translateY(0) !important; 
+        transition: none; 
+    }
+
     .gallery-container img {
         width: 250px;
         height: 180px;
