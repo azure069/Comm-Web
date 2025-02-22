@@ -162,9 +162,9 @@ nav ul li a:hover {
 /* About Us Section */
 .about {
     padding: 60px 20px;
-    text-align: center;
+    text-align: left;
     background: #f4f4f4;
-    z-index: 9998;
+    z-index: auto;
 }
 
 .about p {
