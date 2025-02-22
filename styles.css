@@ -164,6 +164,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     text-align: center;
     background: #f4f4f4;
+    z-index: 9998;
 }
 
 .about p {
