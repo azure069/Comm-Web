@@ -8,6 +8,7 @@ Welcome to the official repository for the **Nepali Community of Belleville** we
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
+- [Restrictions](#restrictions)
 
 ## About
 
