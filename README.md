@@ -1,9 +1,9 @@
- _   _                   _             _      _         _    _       
-| \ | |                 | |           | |    | |       | |  (_)      
-|  \| | ___  __ _ _ __  | |_ ___  _ __| | ___| |__  ___| | ___  __ _ 
-| . ` |/ _ \/ _` | '_ \ | __/ _ \| '__| |/ _ \ '_ \/ __| |/ / |/ _` |
-| |\  |  __/ (_| | | | || || (_) | |  | |  __/ | | \__ \   <| | (_| |
-|_| \_|\___|\__,_|_| |_| \__\___/|_|  |_|\___|_| |_|___/_|\_\_|\__,_| '''
+ N     N  EEEEE  PPPP   AAAAA  L        CCCC  OOO  M     M  M     M  U   U  N     N  I     TTTTT  Y     OOO  F     B     EEEEE  L      L        EEEEE  V     V  I     L      L        EEEEE
+ NN   NN  E      P   P  A   A  L       C     O   O M     M  MM   MM  U   U  NN   NN  I       T    Y    O   O F     B     E      L      L        E      V     V  I     L      L        E
+ N N  N N  EEEE   PPPP   AAAAA  L       C     O   O M     M  M M M M  U   U  N N  N N  I       T    Y    O   O F     BBBBB  EEEE   L      L        EEEE   V   V   I     L      L        EEEE
+ N  N   N  E      P      A   A  L       C     O   O M     M  M   M M  U   U  N  N   N  I       T    Y    O   O F     B     E      L      L        E      V   V   I     L      L        E
+ N     N  EEEEE  P      A   A  LLLLL    CCCC  OOO  M     M  M     M  UUUUU  N     N  I       T    Y    OOO  F     BBBBB  EEEEE  LLLLL  LLLLL   EEEEE  V   V   I     LLLLL  LLLLL   EEEEE
+
 
 # Nepali Community of Belleville Website
 
