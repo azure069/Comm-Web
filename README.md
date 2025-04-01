@@ -1,9 +1,3 @@
- _   _                 _    _           _       _         _        _ _     
-| \ | |  __ _ _ __ ___| |_ (_) ___  ___| |_ ___(_) __ _  | |__    (_) |__  
-|  \| | / _` | '__/ _ \ __| |/ _ \/ __| __/ _ \ |/ _` | | '_ \   | | '_ \ 
-| |\  | (_| | | |  __/ |_| |  __/\__ \ ||  __/ | (_| | | | | |  | | | | |
-|_| \_|\__,_|_|  \___|\__|_|\___||___/\__\___|_|\__,_| |_| |_|  |_|_| |_|
-
 # Nepali Community of Belleville Website
 
 Welcome to the official repository for the **Nepali Community of Belleville** website! This repository contains all the files necessary to run the official website for the Nepali community in Belleville, showcasing the community’s events, news, and cultural highlights.
